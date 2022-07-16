@@ -1,0 +1,137 @@
+qs-1
+#include<stdio.h>
+int main(){
+    int a;
+    scanf("%d",&a);
+    printf("%d",a%10);
+    return 0;
+}
+
+qs-2
+#include<stdio.h>
+int main(){
+    int a;
+    scanf("%d",&a);
+    printf("%d",a/10);
+    return 0;
+}
+
+qs-3
+#include<stdio.h>
+int main(){
+    int a,b,c;
+    scanf("%d %d",&a,&b);
+    c=a;
+    a=b;
+    b=c;
+    printf("%d %d",a,b);
+    return 0;
+}
+
+qs-4
+#include<stdio.h>
+int main(){
+    int a,b;
+    scanf("%d %d",&a,&b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("%d %d",a,b);
+    return 0;
+}
+
+qs-5
+#include<stdio.h>
+int main(){
+    int a,b,s=0;
+    scanf("%d",&a);
+    b=a%10;
+    s=s+b;
+    a=a/10;
+    b=a%10;
+    s=s+b;
+    a=a/10;
+    s=s+a;
+    printf("%d",s);
+    return 0;
+}
+
+qs-6
+#include<stdio.h>
+int main(){
+    char a;
+    scanf("%c",&a);
+    printf("%d",a);
+    return 0;
+}
+
+qs-8
+#include<stdio.h>
+int main(){
+    int a;
+    scanf("%d",&a);
+    if(a&1)
+        printf("Odd!");
+    else
+        printf("Even!");
+    return 0;
+}
+
+qs-9
+#include<stdio.h>
+int main(){
+    int i;
+    char c;
+    float f;
+    double d;
+    printf("int    = %d byte\nchar   = %d byte\nfloat  = %d byte\ndouble = %d byte",sizeof(i),sizeof(c),sizeof(f),sizeof(d));
+    return 0;
+}
+
+qs-10
+#include<stdio.h>
+int main(){
+    int a;
+    scanf("%d",&a);
+    printf("%d",a/10*10);
+    return 0;
+}
+
+qs-11
+#include<stdio.h>
+int main(){
+    int n,d;
+    printf("number = ");
+    scanf("%d",&n);
+    printf("digit = ");
+    scanf("%d",&d);
+    printf("resulting number is %d",n*10+d);
+    return 0;
+}
+
+qs-12
+#include<stdio.h>
+int main(){
+    int inr;
+    printf("Enter INR:");
+    scanf("%d",&inr);
+    printf("USD: %lf",inr/76.23);
+    return 0;
+}
+
+qs-13
+#include<stdio.h>
+int main(){
+    int a,b,s=0;
+    scanf("%d",&a);
+    b=a%10;
+    s=(b+s)*10;
+    a=a/10;
+    b=a%10;
+    s=(b+s)*10;
+    a=a/10;
+    s=s+a;
+    printf("%d",s);
+    return 0;
+}
+
