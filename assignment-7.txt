@@ -1,0 +1,188 @@
+qs-1
+#include<stdio.h>
+int main(){
+    int n,a=-1,b=1,f;
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        f=a+b;
+        a=b;
+        b=f;
+    }
+    printf("Nth term of this Fibo is %d...",f);
+    return 0;
+}
+
+qs-2
+#include<stdio.h>
+int main(){
+    int a=-1,b=1,f,n;
+    printf("Say term Numbers... ");
+    scanf("%d",&n);
+    printf("Here We Go....\n");
+    for(int i=1;i<=n;i++){
+        f=a+b;
+        a=b;
+        b=f;
+        printf("%d ",f);
+    }
+    return 0;
+}
+
+qs-3
+#include<stdio.h>
+
+int main(){
+    int a=0,b=1,n,f;
+    scanf("%d",&n);
+    if(n==0)
+        printf("Fibonacci...");
+    f=a+b;
+    while(f<n){
+        a=b;
+        b=f;
+        f=a+b;
+    }
+    if(f==n)
+        printf("Fibonacci...");
+    else
+        printf("Not a Fibonacci...!");
+    return 0;
+        
+}
+
+qs-4
+#include<stdio.h>
+int main(){
+    int a,b,h;
+    printf("Enter 2 Numbers : ");
+    scanf("%d%d",&a,&b);
+    if(a<b)
+        h=a;
+    else
+        h=b;
+    for(;h>=1;h--)
+        if(a%h==0 && b%h==0)
+            break;
+    
+    printf("HCF is %d...",h);
+    return 0;
+}
+
+qs-5
+#include <stdio.h>
+
+int main() {
+    int a,b,c,i;
+    scanf("%d%d",&a,&b);
+    c=a<b?a:b;
+    for(i=2;i<=c;i++){
+     if(a%i==0&&b%i==0)
+       break;
+    }
+    if(i==c+1)
+      printf("Co-prime...");
+    else
+      printf("Not!");
+    return 0;
+}
+
+qs-6
+#include <stdio.h>
+
+int main() {
+    for(int j=1,c;j<=100;j++){
+     c=0;   
+     for(int i=1;i<=j;i++){
+      if(j%i==0)
+       c++;
+    }
+    if(c==2)
+     printf("%d ",j);
+    else
+     continue;
+    } 
+    return 0;
+}
+
+qs-7
+#include <stdio.h>
+
+int main() {
+    int a,b;
+    scanf("%d%d",&a,&b);
+    for(int j=a,c;j<=b;j++){
+     c=0;   
+     for(int i=1;i<=j;i++){
+      if(j%i==0)
+       c++;
+    }
+    if(c==2)
+     printf("%d ",j);
+    else
+     continue;
+    } 
+    return 0;
+}
+
+qs-8
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d",&n);
+    for(int j=n+1,c;j<=n+10;j++){
+     c=0;   
+     for(int i=1;i<=j;i++){
+      if(j%i==0)
+       c++;
+    }
+    if(c==2){
+      printf("%d ",j);
+      break;
+    } 
+    else
+      continue;
+    } 
+    return 0;
+}
+
+qs-9
+#include <stdio.h>
+
+int main() {
+    int n,a,s=0,n1;
+    scanf("%d",&n);
+    n1=n;
+    while(n>0){
+        a=n%10;
+        s=s+a*a*a;
+        n=n/10;
+    }
+    if(n1==s)
+       printf("Armstrong...");
+    else
+       printf("Not!");
+    
+    return 0;
+}
+
+qs-10
+#include <stdio.h>
+
+int main() {
+    int n,a,s=0,n1;
+    for(int i=0;i<=1000;i++){
+     s=0;
+     n1=i;
+     while(n1>0){
+        a=n1%10;
+        s=s+a*a*a;
+        n1=n1/10;
+     }
+     if(i==s)
+       printf("%d \n",i);
+     else
+       continue;
+    } 
+    return 0;
+}
