@@ -1,0 +1,235 @@
+#include<stdio.h>
+int main(){
+    int a;
+    scanf("%d",&a);
+    if(a>0)
+        printf("+ve...");
+    else
+        printf("Non +ve...");
+    return 0;
+}
+
+#include<stdio.h>
+int main(){
+    int a;
+    scanf("%d",&a);
+    if(a%5==0)
+        printf("Yes...");
+    else
+        printf("No...");
+    return 0;
+}
+
+#include<stdio.h>
+int main(){
+    int a;
+    scanf("%d",&a);
+    if(a%2==0)
+        printf("Even...");
+    else
+        printf("Odd...");
+    return 0;
+}
+
+#include<stdio.h>
+int main(){
+    int a;
+    scanf("%d",&a);
+    if(a&1)
+        printf("Odd...");
+    else
+        printf("Even...");
+    return 0;
+}
+
+#include<stdio.h>
+int main(){
+    int a;
+    scanf("%d",&a);
+    if(a>99 && a<1000)
+        printf("Three Digits...");
+    else
+        printf("Not!");
+    return 0;
+}
+
+#include<stdio.h>
+int main(){
+    int a,b;
+    scanf("%d%d",&a,&b);
+    if(a<b)
+        printf("%d is greater...",b);
+    else if(a==b)
+        printf("Both are same!");
+    else
+        printf("%d is greater...",a);
+    return 0;
+}
+
+#include<stdio.h>
+int main(){
+    int a,b,c,d;
+    printf("Enter value of A,B,C : 3");
+    scanf("%d%d%d",&a,&b,&c);
+    d=b*b-4*a*c;
+    if(d>0)
+        printf("real & distinct");
+    else if(d==0)
+        printf("real & equal");
+    else
+        printf("imaginary");
+    return 0;
+}
+
+#include<stdio.h>
+int main(){
+    int y;
+    scanf("%d",&y);
+    if(y%100==0){
+        if(y%400==0)
+            printf("%d is a Leap Year");
+        else
+            printf("%d is not a Leap Year");
+    }
+    else{
+        if(y%4==0)
+            printf("%d is a Leap Year");
+        else
+            printf("%d is not a Leap Year");
+    }
+    return 0;
+}
+
+#include<stdio.h>
+int main(){
+    int a,b,c;
+    scanf("%d%d%d",&a,&b,&c);
+    if(a>b){
+        if(a>c)
+            printf("%d is greater",a);
+        else
+            printf("%d is greater",c);
+    }
+    else{
+        if(b>c)
+            printf("%d is greater",b);
+        else
+            printf("%d is greater",c);
+    }
+    return 0;
+}
+
+//Tested in dev cpp.. working well..
+#include<stdio.h>
+int main(){
+    int cp,sp,pl;
+    scanf("%d%d",&cp,&sp);
+    pl=sp-cp;
+    if(pl>0)
+        printf("Profit of %d%%...",(pl*100)/cp);
+    else if(pl==0)
+        printf("No Profit No Loss!");
+    else{
+        pl=-pl;
+		printf("Loss of %d%%...",(pl*100)/cp);
+	}
+    return 0;
+}
+
+#include<stdio.h>
+int main(){
+    int a,b,c,d,e;
+    scanf("%d%d%d%d%d",&a,&b,&c,&d,&e);
+    if(a>32 && b>32 && c>32 && d>32 && e>32)
+        printf("Passed...");
+    else
+        printf("Failed!");
+    return 0;
+}
+
+#include<stdio.h>
+int main(){
+    char a;
+    scanf("%c",&a);
+    if(a>='A' && a<='Z')
+        printf("Uppercase");
+    else if(a>='a' && a<='z')
+        printf("Lowercase");
+    return 0;
+}
+
+#include<stdio.h>
+int main(){
+    int a;
+    scanf("%d",&a);
+    if(a%2==0 && a%3==0)
+        printf("Divisible...");
+    else
+        printf("Not!");
+    return 0;
+}
+
+#include<stdio.h>
+int main(){
+    int a;
+    scanf("%d",&a);
+    if(a%7==0 || a%3==0)
+        printf("Divisible...");
+    else
+        printf("Not!");
+    return 0;
+}
+
+#include<stdio.h>
+int main(){
+    int a;
+    scanf("%d",&a);
+    if(a>0)
+        printf("+ve...");
+    else if(a==0)
+        printf("Zero...");
+    else
+        printf("-ve");
+    return 0;
+}
+
+#include<stdio.h>
+int main(){
+    char a;
+    scanf("%c",&a);
+    if(a>='A' && a<='Z')
+        printf("Uppercase");
+    else if(a>='a' && a<='z')
+        printf("Lowercase");
+    else if(a>=' ' && a<='/')
+        printf("Special");
+    return 0;
+}
+
+#include<stdio.h>
+int main(){
+    int a,b,c;
+    scanf("%d%d%d",&a,&b,&c);
+    if(a+b>c && a+c>b && b+c>a)
+        printf("Valid...");
+    else
+        printf("Not!");
+    return 0;
+}
+
+#include<stdio.h>
+int main(){
+    int a;
+    scanf("%d",&a);
+    if(a==1 || a==3 || a==5 || a==7 || a==8 || a==10 || a==12)
+        printf("31 Days...");
+    else if(a==4 || a==6 || a==9 || a==11)
+        printf("30 Days...");
+    else if(a==2)
+        printf("29 Days...");
+    return 0;
+}
+
+//31-1,3,5,7,8,10,12
+//30-4,6,9,11
+//29-2
