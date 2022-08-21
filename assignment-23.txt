@@ -1,0 +1,97 @@
+#include<iostream>
+int main(){
+    std::cout<<"Hello MySirG";
+    return 0;
+}
+
+#include<iostream>
+using namespace std;
+int main(){
+    cout<<"Hello"<<endl<<"MySirG";
+    return 0;
+}
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b;
+    cin>>a>>b;
+    cout<<"Sum = "<<a+b;
+    return 0;
+}
+
+#include<iostream>
+using namespace std;
+int main(){
+    int r;
+    cout<<"Enter Radius : ";
+    cin>>r;
+    cout<<"Area = "<<3.14*r*r<<" sq. unit";
+    return 0;
+}
+
+#include<iostream>
+using namespace std;
+int main(){
+    int l,b,h;
+    cout<<"Enter lenght, breadth and height : ";
+    cin>>l>>b>>h;
+    cout<<"Volume = "<<l*b*h<<" cubic unit";
+    return 0;
+}
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b,c;
+    cout<<"Enter three numbers : ";
+    cin>>a>>b>>c;
+    cout<<"Average = "<<(float)(a+b+c)/3;
+    return 0;
+}
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a;
+    cout<<"Enter a number : ";
+    cin>>a;
+    cout<<"square = "<<a*a;
+    return 0;
+}
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b;
+    cout<<"Enter two numbers : ";
+    cin>>a>>b;
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    cout<<"a = "<<a<<endl<<"b = "<<b;
+    return 0;
+}
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b;
+    cout<<"Enter two numbers : ";
+    cin>>a>>b;
+    cout<<"Max = "<<(a>b?a:b);
+    return 0;
+}
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a[10],s=0;
+    cout<<"Enter 10 numbers : ";
+    for(int i=0;i<10;i++)
+        cin>>a[i];
+    for(int i=0;i<10;i++)
+        s=s+a[i];
+    cout<<"Sum = "<<s;
+    return 0;
+}
