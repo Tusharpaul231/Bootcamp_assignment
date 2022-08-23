@@ -1,0 +1,171 @@
+#include<stdio.h>
+float circle(int);
+int main(){
+    int r; 
+    printf("Enter Radius : ");
+    scanf("%d",&r);
+    printf("Area = %f",circle(r));
+    return 0;
+}
+float circle(int x){
+    float a=3.14*x*x;
+    return a;
+}
+
+#include<stdio.h>
+float si(int,int,int);
+int main(){
+    int p,r,t;
+    printf("Enter Principle, Rate & Time : ");
+    scanf("%d%d%d",&p,&r,&t);
+    printf("Simple Interest = %f",si(p,r,t));
+    return 0;
+}
+float si(int x,int y,int z){
+    float si=1.0*x*y*z/100;
+    return si;
+}
+
+#include<stdio.h>
+int checkEvenOdd(int);
+int main(){
+    int n;
+    printf("Enter a number : ");
+    scanf("%d",&n);
+    if(checkEvenOdd(n))
+        printf("Even");
+    else
+        printf("Odd");
+    return 0;
+}
+int checkEvenOdd(int x){
+    if(x%2)
+        return 0;
+    else
+        return 1;
+}
+
+#include<stdio.h>
+void Nnatural(int);
+int main(){
+    int n;
+    printf("Enter a number : ");
+    scanf("%d",&n);
+    Nnatural(n);
+    return 0;
+}
+void Nnatural(int x){
+    for(int i=1;i<=x;i++)
+        printf("%d ",i);
+}
+
+#include<stdio.h>
+void Nodd(int);
+int main(){
+    int n;
+    printf("Enter a number : ");
+    scanf("%d",&n);
+    Nodd(n);
+    return 0;
+}
+void Nodd(int x){
+    for(int i=1;i<=x;i++){
+        if(i%2)
+            printf("%d ",i);
+    }
+}
+
+#include<stdio.h>
+int fact(int);
+int main(){
+    int n;
+    printf("Enter a number : ");
+    scanf("%d",&n);
+    printf("Factorial = %d",fact(n));
+    return 0;
+}
+int fact(int x){
+    int f=1;
+    for(int i=1;i<=x;i++)
+        f=f*i;
+    return f;
+}
+
+#include<stdio.h>
+int fact(int);
+int main(){
+    int n,r;
+    printf("Enter value for n and r : ");
+    scanf("%d%d",&n,&r);
+    printf("\n\n%d\n  C\n   %d = %d",n,r,fact(n)/(fact(r)*fact(n-r)));
+    return 0;
+}
+int fact(int x){
+    int f=1;
+    for(int i=1;i<=x;i++)
+        f=f*i;
+    return f;
+}
+
+#include<stdio.h>
+int fact(int);
+int main(){
+    int n,r;
+    printf("Enter value for n and r : ");
+    scanf("%d%d",&n,&r);
+    printf("\n\n%d\n  P\n   %d = %d",n,r,fact(n)/fact(n-r));
+    return 0;
+}
+int fact(int x){
+    int f=1;
+    for(int i=1;i<=x;i++)
+        f=f*i;
+    return f;
+}
+
+#include<stdio.h>
+int checkDigit(int,int);
+int main(){
+    int a,b;
+    printf("Enter the Number : ");
+    scanf("%d",&a);
+    printf("Enter the Digit : ");
+    scanf("%d",&b);
+    if(checkDigit(a,b))
+        printf("Got it!");
+    else
+        printf("It's not here !!");
+}
+int checkDigit(int n, int d){
+    int temp;
+    while (n!=0){
+        temp=n%10;
+        if(d==temp)
+            return 1;
+        n=n/10;
+    }
+    return 0;
+}
+
+#include<stdio.h>
+void primeFactor(int);
+int main(){
+    int n;
+    printf("Enter a Number : ");
+    scanf("%d",&n);
+    primeFactor(n);
+    return 0;
+}
+void primeFactor(int x){
+    while(x%2==0){
+        printf("2 ");
+        x=x/2;
+    }
+
+    for(int i=3;i<=x;i+=2){
+        while(x%i==0){
+            printf("%d ",i);
+            x=x/i;
+        }
+    }
+}
